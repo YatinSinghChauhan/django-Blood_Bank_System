@@ -1,0 +1,164 @@
+{% load static %}
+<!DOCTYPE html>
+
+<head>
+    <style>
+
+        .main {
+
+            margin: 45px;
+            padding: 45px;
+        }
+
+        .heading{
+            text-align: center;
+        }
+
+        img.img-cover {
+            height: 490px;
+        }
+        h2.head {
+            font-size: 3rem;
+        }
+        .divider {
+            line-height: 1.5;
+        }
+
+        h1.mb-3.mt-3.text-center.ps-3.pe-3 {
+            padding: 20px;
+        }
+
+
+        /* Card container CSS     */
+
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+            padding: 25px;
+        }
+
+
+
+        .cards-container {
+
+        }
+
+        .card {
+            margin: 30px;
+            padding: 15px;
+        }
+      </style>
+      
+</head>
+<!--bootstrap linking css-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<body>
+
+    <!--Navbar section -->
+    {% include "blood/navbar.html" %}
+
+
+
+    <!-- Main body home page -->
+    <div class="main">
+
+       <div class="heading">
+              <h2 class="head">Give the Gift of Life: <em> Donate </em> <span style="color: red"> Blood </span> Today !</h2>
+       </div>
+
+      <div class="divider">
+
+          <section class="rightCover" >
+
+              <h1 class="mb-3 mt-3 text-center ps-3 pe-3">Who we are? </h1>
+              <p class="paraText"> <span style="color: #dc3545" > Hemo System</span> typically refers to a system
+                  designed for the  management and  analysis of blood-related data and processes. It could encompass
+                  various functionalities related to blood donation, storage, inventory management, blood typing,
+                  cross-matching, transfusion tracking, and donor management.  System which helps streamline the
+                  processes involved in collecting, testing, storing, and distributing blood products, ultimately
+                  contributing to the efficient and safe provision of blood transfusion services. Driven by a passion
+                  for improving patient outcomes and advancing healthcare systems, with  a comprehensive suite of
+                  system designed to streamline every aspect of blood bank operations. From donor  and
+                  screening to inventory management, blood typing, cross-matching, our platform offers robust
+                  features that empower blood bank staff to work more efficiently and effectively. This is a platform
+                  where receiver meet recipient.
+              </p>
+
+          </section>
+
+
+          <section class="leftcover" id="coverPage">
+              <img src="static/image/blood-donation.jpg" class="img-cover" alt="...">
+          </section>
+
+      </div>
+
+    </div>
+
+    <p class="text-center"> </p>
+    <p class="lead text-center">“Opportunities knock the door sometimes, so don’t let it go and donate blood.” </p>
+
+    <br>
+
+
+    <!--    Card Section -->
+    <div class="cards-container">
+
+                 <div class="card" style="width: 18rem;">
+                      <img src="../static/image/donates.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Wanna donate?</h5>
+                        <p class="card-text"> Donating blood is a noble act it makes a significant
+                            difference in the well-being. If you're considering donating blood, Please let us know.</p>
+                        <a href="/donor/donorlogin" style="color: #f65282;">Donate Now!</a>
+                      </div>
+                 </div>
+
+                <div class="card" style="width: 18rem;">
+                      <img src="../static/image/receive-blood.jfif" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Need Blood?</h5>
+                        <p class="card-text"> There isn't anything wrong for asking out for help, if any serious
+                            kind of circumstances occur reach out to us in no time. .</p>
+                        <a href="/patient/patientlogin" style="color: #885df1;" >Request Now! </a>
+                      </div>
+
+                </div> <div class="card" style="width: 18rem;">
+                      <img src="../static/image/patients.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Not Registered?</h5>
+                        <p class="card-text">Some of you might not kew about HemoSys, Register now and saves lives by
+                            donating blood for well-being.
+                            .</p>
+                        <a href="/patient/patientsignup"  style="color: #20c997;">Register Now!</a>
+                      </div>
+                 </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    Footer section -->
+  {% include "blood/footer.html" %}
+
+<!--  Bootstrap js linking-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
+<!--
+
